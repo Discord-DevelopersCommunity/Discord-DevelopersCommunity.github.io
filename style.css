@@ -1,5 +1,6 @@
 body {
   font-family: Comic Sans Ms;
   background-image: url('bg.gif');
-  background-repeat:repeat;
+  background-repeat: repeat;
+  background-size: cover;
 }
