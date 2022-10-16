@@ -20,7 +20,7 @@ function forward() {
             /*if your not on the furthest site move to the next site*/
             else{       
                 let next_page_i = parseInt(i) + 1
-                document.location = pages[next_page_i]
+                window.location = pages[next_page_i]
 
             }
         }
@@ -45,7 +45,7 @@ function backward() {
             /*if your not on the furthest site move to the next site*/
             else{
                 let next_page_i = parseInt(i) - 1
-                document.location = pages[next_page_i]
+                window.location = pages[next_page_i]
 
             }
         }
