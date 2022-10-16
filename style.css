@@ -20,7 +20,8 @@ body{
   color: white;
   padding: 14px 16px;
   outline-color: white;
-  outline-style: dotted;
+  outline-offset: -5px;
+  outline-style: dashed;
 }
 
 .topbar a.active{
@@ -28,4 +29,9 @@ body{
   color: black;
   outline-style: dashed;
   outline-color: black;
+  outline-offset: -5px;
+}
+
+.topbar a:hover{
+  background-color: deeppink;
 }
