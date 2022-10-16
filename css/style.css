@@ -132,3 +132,20 @@ canvas{
   overflow: hidden;
   background-color: blue;
 }
+#bottemright {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.switchpage {
+  font-size: 40px;
+  color: white;
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+}
