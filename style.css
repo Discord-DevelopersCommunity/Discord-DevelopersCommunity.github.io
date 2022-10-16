@@ -1,5 +1,31 @@
-body {
-  font-family: Comic Sans Ms;
-  background-image: url('bg.gif');
-  background-repeat:repeat;
+body{
+  background-color: black;
+  color: white;
+  font-family: sans-serif;
+  border-color: deeppink;
+  border-right-color: black;
+  border-style: solid;
+}
+
+.topbar{
+  background-color: deeppink;
+  position: fixed;
+  overflow: hidden;
+}
+
+.topbar a{
+  text-decoration: none;
+  float: left;
+  background-color: black;
+  color: white;
+  padding: 14px 16px;
+  outline-color: white;
+  outline-style: dotted;
+}
+
+.topbar a.active{
+  background-color: white;
+  color: black;
+  outline-style: dashed;
+  outline-color: black;
 }
