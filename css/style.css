@@ -28,6 +28,7 @@ html,body{
 	width:100%;
 	height:100%;
 	background:#111;
+    position: relative;
 }
 
 html{
@@ -40,7 +41,7 @@ body{
 
 canvas{
   display:block;
-  vertical-align:center;
+  vertical-align:bottom;
 }
 
 
@@ -86,15 +87,22 @@ canvas{
 /* ---- particles.js container ---- */
 
 #particles-js{
-  width: 100%;
-  height: 100%;
+  top: 0; right: 0; bottom: 0; left: 0;
+  position: absolute;
   background-color: #000000;
-  background-image: url('');
-  background-size: cover;
+  background-size: auto;
   background-position: 50% 50%;
   background-repeat: no-repeat;
 }
-
-#center {
-  z-index: 10;
+.container{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.page{
+  position: relative;
+  z-index: 9;
+}
+.page h1{
+  font-size: 50px;
 }
