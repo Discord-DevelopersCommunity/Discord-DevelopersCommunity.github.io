@@ -44,10 +44,24 @@ function backward() {
             }
             /*if your not on the furthest site move to the next site*/
             else{
+                console.log("a")
                 let next_page_i = parseInt(i) - 1
                 window.location = pages[next_page_i]
 
             }
         }
+    }
+}
+/*set the current page number*/
+let path = window.location.pathname;
+let html = path.split("/").pop()
+let page;
+
+for (i in pages) {
+    page = pages[i]
+    let page_number = parseInt(i) + 1
+    if (page === html) {
+        document.getElementById('holding-num').innerText = `< ${page_number} / ${pages.length}`;
+
     }
 }
