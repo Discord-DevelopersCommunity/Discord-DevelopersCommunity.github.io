@@ -149,6 +149,23 @@ canvas{
   background-repeat:no-repeat;
   border: none;
 }
+.image-cropper {
+  float: right;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.image-cropper img {
+  float: left;
+  display: inline;
+  margin: 0 auto;
+  height: 100%;
+  width: auto;
+}
+
 #holding-num{
 }
 #currhtml{
