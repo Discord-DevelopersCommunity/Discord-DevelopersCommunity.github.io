@@ -1,6 +1,8 @@
 var pages = ["index.html","about.html"]
 
 function forward() {
+    console.log("apple")
+
     /* gets current page*/
     let path = document.location.pathname;
     let html = path.split("/").pop()
@@ -28,6 +30,7 @@ function forward() {
 
 
 function backward() {
+    console.log("apple")
     /* gets current page*/
     let path = document.location.pathname;
     let html = path.split("/").pop()

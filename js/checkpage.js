@@ -1,4 +1,5 @@
 /* gets current page*/
+console.log("apple")
 let path = document.location.pathname;
 let html = path.split("/").pop()
 let page;
