@@ -1,7 +1,6 @@
 var pages = ["index.html","about.html"]
 
 function forward() {
-    console.log("apple")
 
     /* gets current page*/
     let path = document.location.pathname;
@@ -20,6 +19,7 @@ function forward() {
             }
             /*if your not on the furthest site move to the next site*/
             else{
+                console.log("apple")
                 let next_page_i = parseInt(i) + 1
                 document.location = pages[next_page_i]
 
