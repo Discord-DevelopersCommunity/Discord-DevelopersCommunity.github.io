@@ -1,15 +1,9 @@
 var pages = ["index.html","about.html"]
 function forward() {
-    let file = $('html').html();
     /* gets current page*/
-    let path = document.location.pathname;
-    let html = path.split("/").pop()
-    let page;
-
+    var html = document.getElementById('currhtml').innerHTML;
     for (i in pages) {
         page = pages[i]
-
-
         if (page === html) {
             /*checks that you not on the farthest site*/
             let total = pages.length - 1;
@@ -27,17 +21,11 @@ function forward() {
     }
 }
 
-
 function backward() {
-    console.log("apple")
     /* gets current page*/
-    let path = document.location.pathname;
-    let html = path.split("/").pop()
-    let page;
-
+    var html = document.getElementById('currhtml').innerHTML;
     for (i in pages) {
         page = pages[i]
-
         if (page === html) {
             /*checks that you not on the farthest site*/
             if (parseInt(i) === 0) {
@@ -53,3 +41,13 @@ function backward() {
     }
 }
 
+
+/* gets current page*/
+var html = document.getElementById('currhtml').innerHTML;
+console.log(html)
+for (i in pages) {
+    let page = pages[i]
+    if (page === html) {
+        document.getElementById("holding-num").innerText = `< ${parseInt(i) + 1} / ${pages.length}`
+    }
+}
