@@ -1,7 +1,6 @@
 var pages = ["index.html","about.html"]
-
 function forward() {
-
+    let file = $('html').html();
     /* gets current page*/
     let path = document.location.pathname;
     let html = path.split("/").pop()
