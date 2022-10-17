@@ -1,6 +1,10 @@
 var pages = ["index.html","about.html"]
 let i = null
-
+let server = http.createServer(function(request, response) {
+    response.writeHead(200, {
+'Content-Type': 'text/plain'
+});
+});
 function forward() {
     /* gets current page*/
     let path = document.location.pathname;
