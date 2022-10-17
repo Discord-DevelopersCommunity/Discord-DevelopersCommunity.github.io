@@ -1,5 +1,4 @@
 var pages = ["index.html","about.html"]
-let i = null
 
 function forward() {
     /* gets current page*/
@@ -51,3 +50,4 @@ function backward() {
         }
     }
 }
+
