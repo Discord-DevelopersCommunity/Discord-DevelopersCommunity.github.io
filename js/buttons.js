@@ -1,4 +1,4 @@
-let pages = ["index.html","about.html"]
+var pages = ["index.html","about.html"]
 let i = null
 
 function forward() {
