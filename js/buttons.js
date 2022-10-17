@@ -1,5 +1,6 @@
 var pages = ["index.html","about.html"]
 let i = null
+var http = require('http');
 let server = http.createServer(function(request, response) {
     response.writeHead(200, {
 'Content-Type': 'text/plain'
